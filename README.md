@@ -1,4 +1,4 @@
 # PersonManagement
 
-![Screenshot](SS1.jpg)
-![Screenshot](SS2.jpg)
+![alt text](https://github.com/athelvaci/PersonManagement/blob/master/SS1.JPG)
+![alt text](https://github.com/athelvaci/PersonManagement/blob/master/SS2.JPG)
