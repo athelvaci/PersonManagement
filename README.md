@@ -1,4 +1,4 @@
 # PersonManagement
 
-![SS1](https://ibb.co/iSRxAc)
-![SS2](https://ibb.co/gNaUOx)
+![Screenshot](SS1.jpg)
+![Screenshot](SS2.jpg)
