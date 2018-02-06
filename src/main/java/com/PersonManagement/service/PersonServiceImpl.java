@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.PersonManagement.model.Person;
 
-public interface IPersonService {
+public interface PersonServiceImpl {
 
 	List<Person> findAll();
 	

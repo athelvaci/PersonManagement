@@ -70,7 +70,7 @@ var app = angular.module('app', ['service', 'sharedServices']);
 				}
 			};
 			
-			//private functions
+			
 			function openDialog() {
 				$scope.showModal = true;
 			}

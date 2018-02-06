@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import com.PersonManagement.model.Person;
 
 @Repository
-public interface IPersonRepository extends MongoRepository<Person, String> {
+public interface PersonRepositoryImpl extends MongoRepository<Person, String> {
 }

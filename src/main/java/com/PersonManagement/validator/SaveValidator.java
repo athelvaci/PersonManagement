@@ -26,7 +26,8 @@ public class SaveValidator extends AbstractMongoEventListener {
 	@Override
 	public void onBeforeSave(Object source, DBObject dbo) {
 		logger.info("Validation running for source({})", source);
-		Set<ConstraintViolation<Object>> violations = validator.validate(source);
+		
+		Set<ConstraintViolation<Object>> violations = validator.validate(source); //check object if its null
 		Iterator it = violations.iterator();
 
 		ArrayNode nodes = JsonNodeFactory.instance.arrayNode();

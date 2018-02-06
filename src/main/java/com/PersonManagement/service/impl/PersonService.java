@@ -2,8 +2,8 @@ package com.PersonManagement.service.impl;
 
 import com.PersonManagement.exception.InconsistentException;
 import com.PersonManagement.model.Person;
-import com.PersonManagement.repository.IPersonRepository;
-import com.PersonManagement.service.IPersonService;
+import com.PersonManagement.repository.PersonRepositoryImpl;
+import com.PersonManagement.service.PersonServiceImpl;
 import com.PersonManagement.util.Constants;
 
 import org.slf4j.Logger;
@@ -14,12 +14,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PersonService implements IPersonService {
+public class PersonService implements PersonServiceImpl {
 	
 	private final Logger logger = LoggerFactory.getLogger(PersonService.class.getName());
 
 	@Autowired
-	private IPersonRepository personRepository;
+	private PersonRepositoryImpl personRepository;
 
 	@Override
 	public List<Person> findAll() {

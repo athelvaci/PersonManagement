@@ -1,7 +1,7 @@
 package com.PersonManagement.controller;
 
 import com.PersonManagement.model.Person;
-import com.PersonManagement.service.IPersonService;
+import com.PersonManagement.service.PersonServiceImpl;
 import com.PersonManagement.util.Constants;
 import com.PersonManagement.util.JSONUtil;
 import com.PersonManagement.util.Status;
@@ -17,12 +17,12 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/core")
-public class PersonController {
+public class PersonController extends AjaxController {
 
 	private final Logger logger = LoggerFactory.getLogger(PersonController.class.getName());
 	
 	@Autowired
-	private IPersonService personService;
+	private PersonServiceImpl personService;
 	
 	@RequestMapping(value="/findAll", method=RequestMethod.GET)
 	public @ResponseBody ObjectNode findAll() {
