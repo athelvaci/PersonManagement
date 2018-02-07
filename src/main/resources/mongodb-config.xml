@@ -12,7 +12,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 	</bean>
 
 	<bean id="mongoUri" class="com.mongodb.MongoURI">
-		<constructor-arg value="${mongo.uri:mongodb://athelvaci:155991ath@ds159274.mlab.com:59274/finartzperson}"/>
+		<constructor-arg value="${mongo.uri:mongodb://athelvaci:12591259@ds159274.mlab.com:59274/finartzperson}"/>
 	</bean>
 
 	<bean class="com.mongodb.Mongo" id="mongo">
