@@ -13,6 +13,7 @@
 <script src="resources/js/person/directive.js"></script>
 <script src="resources/js/person/factory.js"></script>
 <script src="resources/js/person/app.js"></script>
+<script src="resources/js/person/captcha.js"></script>
 <script src="resources/js/library/jquery.maskedinput.min.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <link rel="stylesheet" href="resources/css/library/bootstrap.min.css"
@@ -75,18 +76,18 @@
 				<div class="captcha">
 
 					<div class="g-recaptcha"
-						data-sitekey="6LczSEQUAAAAAGFRbjvf5eIKOLW7mMJjA48hArX4" data-callback="enableBtn"></div>
+						data-sitekey="6LczSEQUAAAAAGFRbjvf5eIKOLW7mMJjA48hArX4"
+						data-callback="enableBtn"></div>
 				</div>
 			</div>
-		
-			
+
+
 			<button type="submit" class="btn btn-primary  btn-block" id="button1"
 				ng-click="saveOrUpdatePerson()">{{getDialogButtonStr()}}</button>
-					<script>document.getElementById("button1").disabled = true;</script>
-				<script>	function enableBtn(){
-    document.getElementById("button1").disabled = false;
-   }
-				</script>
+			<script>
+				document.getElementById("button1").disabled = true;
+			</script>
+
 		</form>
 		</modal>
 		<div id="ajaxLoader">
@@ -96,7 +97,7 @@
 			Add a new person</button>
 
 	</div>
-	
+
 
 
 </body>

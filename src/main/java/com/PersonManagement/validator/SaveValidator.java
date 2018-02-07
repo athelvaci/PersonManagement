@@ -27,18 +27,18 @@ public class SaveValidator extends AbstractMongoEventListener {
 	public void onBeforeSave(Object source, DBObject dbo) {
 		logger.info("Validation running for source({})", source);
 		
-		Set<ConstraintViolation<Object>> violations = validator.validate(source); //check object if its null
-		Iterator it = violations.iterator();
+		Set<ConstraintViolation<Object>> constraintViolation = validator.validate(source); //check object if its null
+		Iterator it = constraintViolation.iterator();
 
 		ArrayNode nodes = JsonNodeFactory.instance.arrayNode();
 
-		while (it.hasNext()) {
+		while (it.hasNext()) {	//check errors
 			ConstraintViolationImpl constraintViolationImpl = (ConstraintViolationImpl) it.next();
 			String message = constraintViolationImpl.getMessage();
 			nodes.add(message);
 		}
 
-		if (nodes.size() > 0) {
+		if (nodes.size() > 0) {	//throw errors
 			logger.info("Validation error : {}", nodes.toString());
 			throw new ValidationException(nodes.toString());
 		}

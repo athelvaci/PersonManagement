@@ -18,6 +18,7 @@ public class AjaxController {
 	protected @ResponseBody ObjectNode handleException(PersonException exception) {
 		logger.error(exception.getMessage());
 		ObjectNode message = JSONUtil.makeResponse(Status.FAIL, exception.getMessage(), null);
+		
 		return message;
 	}
 
