@@ -19,5 +19,5 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 		<constructor-arg ref="mongoUri" />
 	</bean>
 	
-	<mongo:repositories base-package="com.PersonManagement.repository" />
+	<mongo:repositories base-package="com.person.repository" />
 </beans>
