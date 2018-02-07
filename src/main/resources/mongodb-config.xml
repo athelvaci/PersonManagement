@@ -22,7 +22,3 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 <<<<<<< HEAD
 	<mongo:repositories base-package="com.person.repository" />
 </beans>
-=======
-	<mongo:repositories base-package="com.PersonManagement.repository" />
-</beans>
->>>>>>> 211c2b79a0d25828b92b2921496e0b9e62656a02
