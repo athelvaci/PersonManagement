@@ -19,6 +19,5 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 		<constructor-arg ref="mongoUri" />
 	</bean>
 	
-<<<<<<< HEAD
 	<mongo:repositories base-package="com.person.repository" />
 </beans>
